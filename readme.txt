@@ -10,7 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Instagram Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user.
 
 == Description ==
-Instagram Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user. The images are download into your upload folder. The widget can display images in slider and thumbnails.
+* Instagram Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user. The images are download into your upload folder. The widget can display images in slider and thumbnails.
+* No Api Key Needed
+* http://jrwebstudio.com/
 
 == Installation ==
 1. Upload `instagram-slider-widget` to the `/wp-content/plugins/` directory
@@ -28,5 +30,4 @@ Instagram Slider Widget is a responsive slider widget that shows 20 latest image
 * First Realease
 
 == Rate the Plugin ==
-
 * If you liked this plugin. Please rate it
