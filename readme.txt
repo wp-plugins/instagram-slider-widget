@@ -25,4 +25,8 @@ Instagram Slider Widget is a responsive slider widget that shows 20 latest image
 
 == Changelog ==
 = 1.0 =
-First Realease
+* First Realease
+
+== Rate the Plugin ==
+
+* If you liked this plugin. Please rate it
