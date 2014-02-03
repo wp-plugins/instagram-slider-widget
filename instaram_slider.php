@@ -4,6 +4,9 @@ Plugin Name: Instagram Slider Widget
 Plugin URI: http://jrwebstudio.com/instagram-slider/
 Description: Instagram Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user.
 Author: jetonr
+Version: 1.0.1
+Requires at least: 3.5
+Tested up to: 3.8.1
 Author URI: http://jrwebstudio.com/
 License: GPLv2 or later
 */
