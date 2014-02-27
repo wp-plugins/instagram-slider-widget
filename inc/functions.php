@@ -27,18 +27,15 @@ function instag_images_data( $username, $cache_hours, $nr_images ) {
 		$user_options = compact('username', 'cache_hours', 'nr_images');
 		update_option($opt_name, $user_options);
 		if ( $json['response']['code'] == 200 ) {
-			
+
 			$json 	  = $json['body'];
 			$json     = strstr( $json, '{"entry_data"' );
 			$json     = strstr( $json, '</script>', true );
 			$json     = rtrim( $json, ';' );
-			preg_match_all( "#(\"userMedia\"\:)(\[)(.*?)(\]\,\"prerelease\")#isU", $json, $matches );
-			$json     = isset($matches[3][0]) ? $matches[3][0] : null;
-			$json  	  = "[".$json."]";
 			( $results = json_decode( $json, true ) ) && json_last_error() == JSON_ERROR_NONE;
-		
+				
 			if ( ( $results ) && is_array( $results ) ) {
-				foreach( $results as $current => $result ) {
+				foreach( $results['entry_data']['UserProfile'][0]['userMedia'] as $current => $result ) {
 		
 					if( $current >= $nr_images ) break;
 					$caption      = $result['caption'];
