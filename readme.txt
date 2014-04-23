@@ -29,8 +29,8 @@ Instagram Slider Widget is a responsive slider widget that shows 20 latest image
 4. Update the settings in the widget: Instagram Username, Images Layout, Number of Images to show, Check for new images hours 
 
 = Requirements =
-* PHP 5.2.0 or above
-* Wordpress 3.5 or above
+* PHP 5.2.0 or higher
+* Wordpress 3.5 or higher
 
 == Screenshots ==
 1. Frontend Widget Slider
