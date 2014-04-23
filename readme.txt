@@ -19,11 +19,22 @@ Instagram Slider Widget is a responsive slider widget that shows 20 latest image
 * Option to Randomise order of instagram images
 * For more info visit http://jrwebstudio.com/
 
+= If you liked this plugin. Please rate it! =
+
 == Installation ==
 1. Upload `instagram-slider-widget` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the \'Plugins\' menu in WordPress
 3. Go to Appearance > Widgets and drag \'Instagram Slider Widget\' to your sidebar
 4. Update the settings in the widget: Instagram Username, Images Layout, Number of Images to show, Check for new images hours 
+
+= Requirements =
+* PHP 5.2.0 or Above
+* Wordpress 3.5 or Above
+
+Using the plugin couldn't be simpler; the plugin has 2 variants of shortcode available, [php] and [allowphp] other versions of the shortcode may exist but are not fully supported.
+
+To add the PHP code to your post or page simply place any PHP code inside the shortcode tags as follows:
+
 
 == Screenshots ==
 1. Frontend Widget Slider
@@ -47,6 +58,3 @@ Instagram Slider Widget is a responsive slider widget that shows 20 latest image
 
 = 1.0 =
 * First Realease
-
-== Rate the Plugin ==
-* If you liked this plugin. Please rate it
