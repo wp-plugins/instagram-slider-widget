@@ -1,22 +1,12 @@
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 	$('.pllexislider').pllexislider({
-		animation: "fade",
+		animation: "slide",
 		directionNav: false,
-		start: function(slider){
-			slider.hover(
-				function () {
-					slider.find('.jr-insta-datacontainer, .pllex-control-nav').stop(true,true).fadeIn();
-				}, 
-				function () {
-					slider.find('.jr-insta-datacontainer, .pllex-control-nav').stop(true,true).fadeOut();
-				}
-			);  
-		}
 	});
 });
 </script>
-<div class="pllexislider">
+<div class="pllexislider normal">
     <ul class="no-bullet slides">
 		<?php 
 			if ( isset($data_arr) && is_array($data_arr) ) {
@@ -42,16 +32,14 @@ jQuery(document).ready(function($) {
 
 					echo '<li>'. "\n";
 					echo '<a target="_blank" href="'.$link.'"><img src="'.$image.'" alt="'.$text.'"></a>' . "\n";
-					echo '<div class="jr-insta-wrap">' . "\n";					
-					echo '<div class="jr-insta-datacontainer">' . "\n";
 					if ( $created_time ) {
-						echo '<span class="jr-insta-time">'. human_time_diff( $created_time ) . ' ago</span>' . "\n";
+						echo '<div class="instatime">'. human_time_diff( $created_time ) . ' ago</div>' . "\n";
 					}
-					echo '<span class="jr-insta-username">by <a target="_blank" href="'. $user_url .'">'. $user_name .'</a></span>' . "\n";
+					echo '<div class="instadescription">' . "\n";
+					echo '<p>by <a href="'. $user_url .'">'. $user_name .'</a></p>' . "\n";
 					if ($text) {
-						echo '<span class="jr-insta-desc">'.$text.'</span>' . "\n";
+						echo '<p>'.$text.'</p>' . "\n";
 					}
-					echo '</div>' . "\n";
 					echo '</div>' . "\n";
 					echo '</li>' . "\n";
 				
