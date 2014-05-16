@@ -2,7 +2,7 @@
 /*
 Plugin Name: Instagram Slider Widget
 Plugin URI: http://jrwebstudio.com/instagram-slider/
-Version: 1.1.1
+Version: 1.1.2
 Description: Instagram Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user.
 Author: jetonr
 Author URI: http://jrwebstudio.com/
@@ -203,8 +203,9 @@ class JR_InstagramSlider extends WP_Widget {
         <p>
           <label for="<?php echo $this->get_field_id( 'template' ); ?>"><?php _e( 'Images Layout', 'jrinstaslider' ); ?>
           <select class="widefat" name="<?php echo $this->get_field_name( 'template' ); ?>">
-          <option value="slider" <?php echo ($instance['template'] == 'slider') ? ' selected="selected"' : ''; ?>><?php _e('Slider', 'jrinstaslider'); ?></option>
-          <option value="thumbs" <?php echo ($instance['template'] == 'thumbs') ? ' selected="selected"' : ''; ?>><?php _e('Thumbnails', 'jrinstaslider'); ?></option>
+          <option value="slider" <?php echo ($instance['template'] == 'slider') ? ' selected="selected"' : ''; ?>><?php _e( 'Slider - Normal', 'jrinstaslider' ); ?></option>
+          <option value="slider-overlay" <?php echo ($instance['template'] == 'slider-overlay') ? ' selected="selected"' : ''; ?>><?php _e( 'Slider - Overlay Text', 'jrinstaslider' ); ?></option>
+          <option value="thumbs" <?php echo ($instance['template'] == 'thumbs') ? ' selected="selected"' : ''; ?>><?php _e( 'Thumbnails', 'jrinstaslider' ); ?></option>
           </select>  
           </label>
        </p>
