@@ -12,6 +12,7 @@
 
 /* Flexi Slider Template */
 .pllexislider { margin: 0; position: relative; }
+.pllexislider a { color: #ffffff; text-decoration: none; }
 .pllex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .pllex-viewport { max-height: 300px; }
 .pllexislider .slides { zoom: 1; overflow: hidden; }
