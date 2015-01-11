@@ -257,25 +257,27 @@ class JR_InstagramSlider extends WP_Widget {
 				<div class="jr-image-options">
 					<h4 class="jr-advanced-title"><?php _e( 'Advanced Image Options', 'jrinstaslider'); ?></h4>
 					<?php 
-					$image_size_options = get_intermediate_image_sizes(); 
-					if ( is_array( $image_size_options && !empty($image_size_options ) ) ) :
+					$image_size_options = get_intermediate_image_sizes();
+					$image_sizes = array( 'thumbnail', 'medium', 'large' );
+					if ( is_array( $image_size_options ) && !empty( $image_size_options ) ) {
+						$image_sizes = $image_size_options;
+					}
 					?>
 					<p>
 						<label for="<?php echo $this->get_field_id( 'image_size' ); ?>"><?php _e( 'Image size', 'jrinstaslider' ); ?></label>
 						<select class="widefat" id="<?php echo $this->get_field_id( 'image_size' ); ?>" name="<?php echo $this->get_field_name( 'image_size' ); ?>">
 							<option value=""><?php _e('Select Image Size', 'jrinstaslider') ?></option>
 							<?php
-							foreach ( $image_size_options as $image_size_option ) {
+							foreach ( $image_sizes as $image_size_option ) {
 								echo '
 									<option value="' . esc_attr( $image_size_option ) . '"'
 									. selected( $image_size_option, $instance['image_size'], false )
-									. '>' . $image_size_option . '</option>';
+									. '>' . ucfirst( $image_size_option ) . '</option>';
 							}
 							?>
 						</select>
 						<small class="description"><?php _e( 'Image Sizes are defined using add_image_size() function', 'jrinstaslider' ); ?></small>
 					</p>
-					<?php endif; ?>
 					<p>
 						<label for="<?php echo $this->get_field_id( 'image_link_rel' ); ?>"><?php _e( 'Image Link rel attribute', 'jrinstaslider' ); ?>:</label>
 						<input class="widefat" id="<?php echo $this->get_field_id( 'image_link_rel' ); ?>" name="<?php echo $this->get_field_name( 'image_link_rel' ); ?>" value="<?php echo $instance['image_link_rel']; ?>" />
