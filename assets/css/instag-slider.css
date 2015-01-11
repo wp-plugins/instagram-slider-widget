@@ -12,7 +12,6 @@
 
 /* Flexi Slider Template */
 .pllexislider { margin: 0; position: relative; }
-.pllexislider a { color: #ffffff; text-decoration: none; }
 .pllex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .pllex-viewport { max-height: 300px; }
 .pllexislider .slides { zoom: 1; overflow: hidden; }
@@ -62,6 +61,7 @@
 .pllexislider-normal ul li .jr-insta-datacontainer .jr-insta-caption { line-height: normal;  margin-top: 5px; margin-bottom: 5px; display: block; clear : both }
 
 /* Slider Overlay */
+.pllexislider-overlay a { color: #ffffff; text-decoration: none; }
 .pllexislider-overlay ul li .jr-insta-wrap { position: relative; color: #FFF; line-height: normal; }
 .pllexislider-overlay ul li .jr-insta-wrap .jr-insta-datacontainer { position: absolute; display: none; left: 0; bottom: 0; width: 100%; text-shadow: 0 0 5px rgba(0,0,0,0.7); background: rgba(0,0,0,0.4); padding: 5px 15px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .pllexislider-overlay ul li .jr-insta-wrap .jr-insta-datacontainer .jr-insta-username a { color: #FFF !important; text-decoration: none; font-weight: bold; } 
